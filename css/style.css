@@ -1,0 +1,663 @@
+*{padding: 0;margin: 0;}
+li,a{text-decoration: none;list-style: none;color: #1b6d85;}
+a:active,a:hover{
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.viewBox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background: linear-gradient(rgba(138,288,250,0.2), rgba(0,105,158,1));
+}
+.view{
+    width: 100%;
+    height: 100%;
+    background: url("../img/lines-0.png") no-repeat bottom right;
+    background-size: 80%;
+}
+.logo{
+    width: 100%;
+    height: 45vh;
+    position: relative;
+}
+.logoView{
+    width: 78vw;
+    height: 29vh;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.logoTitle,
+.logoName,
+.logoCopy{
+    height: 9vh;
+    line-height: 9vh;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    text-align: center;
+}
+.logoTitle{
+    font-size: 4vh;
+    color: #fff;
+    text-shadow: 0 2px 1px #0f0f0f;
+}
+.logoName{
+    font-size: 7vh;
+    letter-spacing: 2.1vh;
+    background: -webkit-linear-gradient(rgba(0,49,92,1), rgba(120,204,248,1) 70%, rgba(255,255,255,1) 5%); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(rgba(0,49,92,1), rgba(120,204,248,1) 70%, rgba(255,255,255,1) 5%); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(rgba(0,49,92,1), rgba(120,204,248,1) 70%, rgba(255,255,255,1) 5%); /* Firefox 3.6 - 15 */
+    background: linear-gradient(rgba(0,49,92,1), rgba(120,204,248,1) 70%, rgba(255,255,255,1) 5%); /* 标准的语法（必须放在最后） */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logoCopy{
+    position: relative;
+}
+.copyBox{
+    width: 16vh;
+    height: 5.6vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*绘制COPY 图形LOGO*/
+.copyLeft,.copyRight{
+    position: relative;
+    width: 8vh;
+    height: 5.6vh;
+    float: left;
+    background-color: white;
+}
+.copyLeft{
+    border-top-left-radius: 2.8vh;
+    border-bottom-left-radius: 2.8vh;
+    border-top-right-radius: 4.5vh;
+    border-bottom-right-radius: 4.5vh;
+    background: linear-gradient(#036ba0,#fff);
+    border-bottom: 1px solid #2b669a;
+}
+.copyRight{
+    border-top-right-radius: 2.8vh;
+    border-bottom-right-radius: 2.8vh;
+    border-top-left-radius: 4.5vh;
+    border-bottom-left-radius: 4.5vh;
+    background: linear-gradient(#fff,#036ba0);
+    border-top: 1px solid #2b669a;
+}
+.copyLeft>div, .copyRight>div{
+    width: 5vh;
+    height: 4vh;
+    margin: auto;
+    background-color: #bceefa;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.copyLeft>div{
+    border-top-left-radius: 1.5vh;
+    border-bottom-left-radius: 1.5vh;
+    border-top-right-radius: 4vh;
+    border-bottom-right-radius: 4vh;
+
+}
+.copyRight>div{
+    border-top-right-radius: 1.5vh;
+    border-bottom-right-radius: 1.5vh;
+    border-top-left-radius: 4vh;
+    border-bottom-left-radius: 4vh;
+}
+/*绘制COPY 图形LOGO*/
+.btnTo{
+    width: 100%;
+}
+.signBtn,.regBtn{
+    margin: auto;
+    width: 78.5vw;
+    height: 5.6vh;
+    line-height: 5.6vh;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-size: 3vh;
+    text-align: center;
+    -webkit-border-radius:2vh;
+    -moz-border-radius:2vh;
+    border-radius:2vh;
+    border-bottom: 2px solid #1b6d85;
+}
+.signBtn{
+    background-color: rgba(199,229,245,0.8);
+    color: #01699f;
+}
+.regBtn{
+    background-color: rgba(53,145,190,0.8);
+    color: #fff;
+    margin-top: 30px;
+}
+/*欢迎页结束*/
+/*Sign CSS start*/
+.pageHead{
+    width: 100%;
+    height: 7.8vh;
+}
+.pageName{
+    width: 78vw;
+    height: 100%;
+    margin: auto;
+    color: #01699f;
+    font-size: 3vh;
+    text-align: center;
+    line-height: 7.8vh;
+    float: left;
+}
+.backBtn,.setting{
+    display: inline-block;
+    width: 11vw;
+    height: 100%;
+    float: left;
+    color: #01699f;
+    font-size: 2.5vh;
+    text-align: right;
+    line-height: 7.8vh;
+}
+.setting{text-align: left}
+.SignlogoBox{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+}
+.SignlogoView{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 44vh;
+    height: 18vh;
+}
+
+.userName,.passWord,.signSubBtn,.email,.phoneNumber,.address,.regSubBtn{
+    width: 44vh;
+    height: 5.5vh;
+    background-color: #fff;
+    -webkit-border-radius:2vh;
+    -moz-border-radius:2vh;
+    border-radius:2vh;
+    border-bottom: 0.2vh solid #1b6d85;
+    margin: auto;
+}
+.formGroup{
+    width: 44vh;
+    margin: auto;
+}
+.formGroup input{
+    width: 30vh;
+    height: 5.5vh;
+    vertical-align: middle;
+    margin: auto;
+    font-size: 2.5vh;
+    color: #1b6d85;
+    outline: none;
+    border: none;
+    border-bottom: 0.2vh solid #1b6d85;
+    float: left;
+}
+.formGroup input::-webkit-input-placeholder{
+    color: #76c2e8;
+}
+.signSubBtn,.regSubBtn{
+    display: block;
+    background: linear-gradient(rgba(70,158,204,1),rgba(12,114,166,1));
+    text-align: center;
+    line-height: 5.5vh;
+    font-size: 2.5vh;
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-top: 2vh;
+}
+.errMsg{
+    width: 54vw;
+    height: 3vh;
+    line-height: 3vh;
+    visibility: hidden;
+    padding-left: 3vh;
+    font-size: 2vh;
+    color: red;
+}
+.formIco{
+    display: inline-block;
+    width: 7vh;
+    height: 100%;
+    float: left;
+    vertical-align: middle;
+    -webkit-text-stroke: 0.1vh #1d79aa;
+    color: transparent;
+    text-align: center;
+    line-height: 5.5vh;
+    font-size: 2.5vh;
+}
+.signLinkbox{
+    width: 44vh;
+    height: 3vh;
+    clear: both;
+    zoom: 1;
+    margin: 2vh auto;
+}
+.signLinkbox span{
+    display: inline-block;
+    height: 2.5vh;
+    line-height: 2.5vh;
+    vertical-align: middle;
+}
+.link{
+    width: 50%;
+    float: left;
+    font-size: 2vh;
+    color: #fff;
+    text-align: center;
+}
+.otherLine{
+    width: 44vh;
+    height: 3vh;
+    margin: 4vh auto;
+    vertical-align: middle;
+}
+.otherLine span{
+    display: inline-block;
+    width: 6vh;
+    height: 3vh;
+    line-height: 3vh;
+    text-align: center;
+    color: #fff;
+    font-size: 1.8vh;
+    vertical-align: middle;
+    float: left;
+}
+.otherLine div{
+    display: inline-block;
+    width: 19vh;
+    height: 0.2vh;
+    margin-top: 1.5vh;
+    border-bottom: 0.1vh solid #fff;
+    float: left;
+    vertical-align: middle;
+    background-color: #555;
+}
+.otherSign{
+    width: 44vh;
+    margin: auto;
+}
+.otherBtn{
+    width: 100%;
+    height: 5.5vh;
+    line-height: 5.5vh;
+    -webkit-border-radius: 2vh;
+    -moz-border-radius: 2vh;
+    border-radius: 2vh;
+    border: 0.2vh solid #fff;
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 2vh;
+    color: #fff;
+}
+/*Sign CSS end*/
+
+/*Register css start*/
+.ellipse{
+    width: 17.6vh;
+    height: 17.6vh;
+    -webkit-border-radius:8.8vh;
+    -moz-border-radius:8.8vh;
+    border-radius:8.8vh;
+    border: 0.5vh solid #fff;
+    -webkit-box-shadow:  2px 2px 15vh #fff;
+    -moz-box-shadow:  2px 2px 15vh #fff;
+    box-shadow:   2px 2px 15vh #fff;
+    margin: auto;
+    position: relative;
+}
+.ellipseMain{
+    width: 16vh;
+    height: 16vh;
+    -webkit-border-radius:8vh;
+    -moz-border-radius:8vh;
+    border-radius:8vh;
+    background-color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.ellipseMain img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+}
+.photocam{
+    display: block;
+    width: 8vh;
+    height: 8vh;
+    margin: auto;
+    color: transparent;
+    line-height: 8vh;
+    text-align: center;
+    -webkit-text-stroke: 0.2vh #1b6d85;
+    font-size: 5vh;
+}
+.ellipseMain p{
+    width: 10vh;
+    margin: auto;
+    text-align: center;
+    color: #1b6d85;
+    font-size: 2vh;
+}
+.ellipseMain form{
+    width: 16vh;
+    height: 16vh;
+    opacity:0;
+    filter:alpha(opacity=0);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.ellipseMain form input{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.glyphicon-ok-sign{visibility: hidden}
+/*Register css end*/
+/*Menu css start*/
+.menuBox{
+    width: 78vw;
+    height: auto;
+    clear: both;
+    zoom: 1;
+    margin: auto;
+}
+.searchBox{
+    width: 100%;
+    height: 5vh;
+    margin: 2.5vh auto;
+    -webkit-border-radius: 2vh;
+    -moz-border-radius: 2vh;
+    border-radius: 2vh;
+    background-color: #fff;
+}
+.Menu_search{
+    width: 65vw;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 3vh;
+    color: #1b6d85;
+    font-size: 2.2vh;
+    float: left;
+}
+.Menu_search::-webkit-input-placeholder{
+    color: #039fcf;
+    font-size: 2vh;
+    font-style: italic;
+}
+.searchBtn{
+    display: inline-block;
+    width: 13vw;
+    height: 100%;
+    text-align: right;
+    padding-right: 3vh;
+    line-height: 5vh;
+    font-size: 2vh;
+    color: #039fcf;
+    float: left;
+}
+.menuItemBox{
+    width: 100%;
+    height: auto;
+    clear: both;
+    zoom: 1;
+    text-align: justify;
+}
+.menuItemBox a{
+    display: inline-block;
+    width: 9.8vh;
+    height: 12.7vh;
+    margin: 2.4vh;
+}
+.menuItem{
+    width: 9.8vh;
+    height: 12.7vh;
+    position: relative;
+}
+.justify_fix{
+    display: inline-block;
+    width: 9.8vh;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.menuItem span{
+    display: block;
+    width: 9.8vh;
+    height: 9.8vh;
+    -webkit-border-radius: 4.9vh;
+    -moz-border-radius: 4.9vh;
+    border-radius: 4.9vh;
+    border: 0.3vh solid #fff;
+    margin: auto;
+    text-align: center;
+    line-height: 9.8vh;
+    color: #fff;
+    font-size: 4vh;
+}
+.menuItem span.msgNum{
+    display: block;
+    width: 3vh;
+    height: 3vh;
+    -webkit-border-radius: 1.5vh;
+    -moz-border-radius: 1.5vh;
+    border-radius: 1.5vh;
+    background-color: #fff;
+    position: absolute;
+    top: 0vh;
+    right: -0.1vh;
+    text-align: center;
+    line-height: 2.2vh;
+    color: #459dcb;
+    font-size: 2vh;
+}
+.menuItem span:active{
+    background-color: #459dcb;
+    border: none;
+}
+.menuItem p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vh;
+    color: #fff;
+    margin-top: 1vh;
+}
+/*Menu css end*/
+/*Profile css start*/
+.coverImage{
+    width: 100%;
+    height: 56vh;
+    background: url("../img/cover-image.png") no-repeat center;
+    background-size: cover;
+    -webkit-box-shadow: inset 0vh 5vh 8vh #d8f6f8;
+    -moz-box-shadow: inset 0vh 5vh 8vh #d8f6f8;
+    box-shadow: inset 0vh 5vh 8vh #d8f6f8;
+}
+.profile{
+    width: 100%;
+    height: 44vh;
+    background-color: #fff;
+    -webkit-box-shadow:  0 -2vh 20vh #d8f6f8;
+    -moz-box-shadow:  0 -2vh 20vh #d8f6f8;
+    box-shadow:  0 -2vh 20vh #d8f6f8;
+}
+.profileDetails{
+    width: 100%;
+    height: 22.6vh;
+    /*background-color: #00b3ee;*/
+    position: relative;
+}
+.profileHead{
+    width: 17vh;
+    height: 17vh;
+    margin: auto;
+    position: absolute;
+    top: -6vh;
+    left: 0;
+    right: 0;
+    /*background-color: #0f0f0f;*/
+}
+.pro-ellipse{
+    width: 12vh;
+    height: 12vh;
+    margin: auto;
+    -webkit-border-radius: 6vh;
+    -moz-border-radius: 6vh;
+    border-radius: 6vh;
+    background-color: #fff;
+    border: 0.6vh solid #026a9f;
+    position: relative;
+}
+.pro-img{
+    display: block;
+    width: 10vh;
+    height: 10vh;
+    margin: auto;
+    -webkit-border-radius: 5vh;
+    -moz-border-radius: 5vh;
+    border-radius: 5vh;
+    background-color: #eee;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+.pro-name{
+    text-align: center;
+    color: #026a9f;
+    font-size: 3vh;
+    font-weight: bolder;
+    margin-top: 1vh;
+}
+.profileBody{
+    width: 88vw;
+    height: 11.6vh;
+    border-bottom: 0.2vh solid #aaa;
+    border-top: 0.2vh solid #aaa;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.profileBody p{
+    text-align: center;
+    color: #0f0f0f;
+    font-size: 1.5vh;
+}
+.proLinkbox{
+    width: 100%;
+}
+.proLinkbox>div{
+    width: 44vh;
+    height: 5vh;
+    margin: auto;
+}
+.proLink{
+    float: left;
+    display: inline-block;
+    margin:1vh 2vh;
+}
+.proLink span{
+    vertical-align: middle;
+    font-size: 2vh;
+    color: #ff6600;
+    margin-right: 0.5vh;
+}
+.proStats{
+    width: 88vw;
+    height: 4vh;
+    margin: 3vh auto;
+    position: absolute;
+    top: 23vh;
+    left: 0;
+    right: 0;
+}
+.proStat_0,.proStat_1,.proStat_2{
+    width: 29vw;
+    height: 100%;
+    float: left;
+}
+.proStat_0>div,.proStat_1>div,.proStat_2>div{
+    width: 22.5vw;
+    height: auto;
+    margin: auto;
+}
+.proStat_1{
+    border-left: 0.2vh solid #aaa;
+    border-right: 0.2vh solid #aaa;
+}
+.proStat-L{
+    width: 60%;
+    margin-top: -2vh;
+    float: left;
+}
+.proStat-R{
+    width: 40%;
+    margin-top: -1vh;
+    float: left;
+}
+.proStatNum{
+    display: inline-block;
+    width: 100%;
+    color: #ff6633;
+    font-size: 3.5vh;
+}
+.proStatItem{
+    display: inline-block;
+    width: 100%;
+    color: #aaa;
+    font-size: 1.5vh;
+}
+.proStatIco{
+    display: inline-block;
+    width: 100%;
+    color: #026a9f;
+    font-size: 4vh;
+    text-align: right;
+    line-height: 6vh;
+}
+/*Profile css end*/

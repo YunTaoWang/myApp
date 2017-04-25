@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/getClassName.js"></script>
+</head>
+<body>
+    <div class="viewBox">
+        <div class="view">
+            <div class="pageHead">
+                <span class="backBtn glyphicon glyphicon-menu-left" onclick="window.history.go(-1)"></span>
+                <div class="pageName">Register</div>
+                <span class="setting glyphicon glyphicon-cog " onclick=""></span>
+            </div>
+            <div class="SignlogoBox">
+                <div class="SignlogoView">
+                    <div class="ellipse">
+                        <div class="ellipseMain">
+                            <span class="photocam glyphicon glyphicon-camera"></span>
+                            <p>UPLOAD IMAGE</p>
+                            <img id="img"/>
+                            <form action=""  id="uploadForm" enctype="multipart/form-data" method="post" autocomplete="off">
+                                <input type="file"  name="imageFile" id="imageFile"/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="" autocomplete="off">
+                <div class="formGroup">
+                    <div class="userName">
+                        <span class="formIco glyphicon glyphicon-user"></span>
+                        <input type="text" class="" id="userName" placeholder="create your userName">
+                        <span class="formIco glyphicon glyphicon-ok-sign"></span>
+                    </div>
+                    <div class="errMsg userNameErr"></div>
+                    <div class="passWord">
+                        <span class="formIco glyphicon glyphicon-lock"></span>
+                        <input type="password" class="" id="passWord" placeholder="create your password">
+                        <span class="formIco glyphicon glyphicon-ok-sign"></span>
+                    </div>
+                    <div class="errMsg passWordErr"></div>
+                    <div class="email">
+                        <span class="formIco glyphicon glyphicon-envelope"></span>
+                        <input type="email" class="" id="email" placeholder="input your E-mail">
+                        <span class="formIco glyphicon glyphicon-ok-sign"></span>
+                    </div>
+                    <div class="errMsg emailErr"></div>
+                    <div class="phoneNumber">
+                        <span class="formIco glyphicon glyphicon-phone"></span>
+                        <input type="text" class="" id="phoneNumber" placeholder="input your phoneNumber">
+                        <span class="formIco glyphicon glyphicon-ok-sign"></span>
+                    </div>
+                    <div class="errMsg phoneNumberErr"></div>
+                    <div class="address">
+                        <span class="formIco glyphicon glyphicon-home"></span>
+                        <input type="text" class="" id="address" placeholder="input your address">
+                        <span class="formIco glyphicon glyphicon-ok-sign"></span>
+                    </div>
+                    <div class="errMsg addressErr"></div>
+                </div>
+                <button type="submit" class="regSubBtn" id="regSubBtn">Create account</button>
+            </form>
+        </div>
+    </div>
+
+<script src="js/app.js"></script>
+<script src="js/registerForm.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/getClassName.js"></script>
+</head>
+<body>
+    <div class="viewBox">
+        <div class="view">
+            <div class="pageHead">
+                <span class="backBtn glyphicon glyphicon-menu-left" onclick="window.history.go(-1)"></span>
+                <div class="pageName">Sign in</div>
+            </div>
+            <div class="SignlogoBox">
+                <div class="SignlogoView">
+                    <div class="logoCopy">
+                        <div class="copyBox">
+                            <div class="copyLeft">
+                                <div></div>
+                            </div>
+                            <div class="copyRight">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="logoName">INFINITY</p>
+                </div>
+            </div>
+            <form action="SignIn.action" autocomplete="off">
+                <div class="formGroup">
+                    <div class="userName">
+                        <span class="formIco glyphicon glyphicon-user"></span>
+                        <input type="text" class="" id="userName" placeholder="input your userName">
+                    </div>
+                    <div class="errMsg userNameErr"></div>
+                    <div class="passWord">
+                        <span class="formIco glyphicon glyphicon-lock"></span>
+                        <input type="password" class="" id="passWord" placeholder="input your password">
+                    </div>
+                    <div class="errMsg passWordErr"></div>
+                </div>
+                <button type="submit" class="signSubBtn" id="signSubBtn" >Sign in</button>
+                <ul class="signLinkbox">
+                    <a href="register.html"><li class="link regLink">
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                        <span>New member</span>
+                    </li></a>
+                    <a href=""><li class="link lostpsdLink">
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                        <span>Lost password</span>
+                    </li></a>
+                </ul>
+
+                <div class="otherLine">
+                    <div></div>
+                    <span>OR</span>
+                    <div></div>
+                </div>
+                <div class="otherSign">
+                    <div class="otherBtn QQsign">
+                        LOGIN WITH <b>QQ</b>
+                    </div>
+                    <div class="otherBtn WXsign">
+                        LOGIN WITH <b>WECHART</b>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/loginForm.js"></script>
+</body>
+</html>
